@@ -4,6 +4,7 @@ import { State } from '../types/state';
 
 export enum ListsActionsTypes {
   FETCH_LISTS = 'FETCH_LISTS',
+  FETCH_LIST_TASKS_BY_ID = 'FETCH_LIST_TASKS_BY_ID',
   FETCH_ADD_LIST = 'FETCH_ADD_LIST',
   FETCH_DELETE_LIST = 'FETCH_DELETE_LIST',
 }

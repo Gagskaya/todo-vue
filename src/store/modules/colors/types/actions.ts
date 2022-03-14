@@ -3,7 +3,7 @@ import { Mutations } from '../types/mutations';
 import { State } from '../types/state';
 
 export enum ColorsActionsTypes {
-  GET_COLORS = 'GET_COLORS',
+  FETCH_COLORS = 'FETCH_COLORS',
 }
 
 export type AugmentedActionContext = {

@@ -1,22 +1,47 @@
 {
   "lists": [
     {
-      "name": "asd",
-      "colorId": 3,
+      "name": "1",
+      "colorId": 1,
       "id": 1
     },
     {
-      "name": "ASDASD",
-      "colorId": 5,
+      "name": "2",
+      "colorId": 1,
       "id": 2
     },
     {
-      "name": "ASD",
-      "colorId": 3,
+      "name": "3",
+      "colorId": 1,
       "id": 3
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "listId": 1,
+      "text": "1",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "listId": 2,
+      "text": "2",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "listId": 2,
+      "text": "2",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "listId": 3,
+      "text": "3",
+      "completed": false,
+      "id": 4
+    }
+  ],
   "colors": [
     {
       "id": 1,
