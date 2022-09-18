@@ -7,5 +7,7 @@ export const state: State = {
   items: [],
   item: {} as List,
   loadingStatus: LoadingStatus.NEVER,
-  activeList: 1,
+  taskLoadingStatus: LoadingStatus.NEVER,
+  activeList: null,
+  editedListName: '',
 };

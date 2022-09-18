@@ -6,11 +6,13 @@
     "serve": "concurrently \"vue-cli-service serve\" \"npm run fake-json\"",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "fake-json": "json-server ./public/db.json --watch --port 3001"
+    "fake-json": "json-server src/assets/db/db.json --watch --port 3001"
   },
   "dependencies": {
     "axios": "^0.26.0",
+    "caniuse-lite": "^1.0.30001402",
     "core-js": "^3.8.3",
+    "uuid": "^9.0.0",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
     "vue-draggable-next": "^2.1.1",
@@ -18,6 +20,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",

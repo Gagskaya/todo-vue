@@ -1,5 +1,10 @@
 import { State } from './types/state';
 
 export const state: State = {
-  modal: false,
+  isVisibleAddList: false,
+  isVisibleAddTask: false,
+  isVisibleDeleteList: false,
+  isVisibleDeleteTask: false,
+  isVisibleEditListName: false,
+  isVisibleEditTaskText: false,
 };

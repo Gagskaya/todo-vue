@@ -1,4 +1,4 @@
-import { Color } from './colors';
+import { Color } from './color';
 
 export type State = {
   items: Color[];

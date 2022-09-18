@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import ListTasksView from '@/views/ListTasksView.vue';
+import SingleList from '@/routes/SingleList.vue';
+import AllLists from '@/routes/AllLists.vue';
 
 const routes = [
   {
+    path: '/',
+    name: 'AllLists',
+    component: AllLists,
+  },
+  {
     path: '/lists/:id',
-    name: 'listsTasks',
-    component: ListTasksView,
+    name: 'SingleList',
+    component: SingleList,
   },
 ];
 

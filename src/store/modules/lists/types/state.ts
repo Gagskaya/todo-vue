@@ -3,6 +3,8 @@ import { List } from './list';
 export type State = {
   items: List[];
   item: List;
+  activeList: string | null;
   loadingStatus: string;
-  activeList: number;
+  taskLoadingStatus: string;
+  editedListName: string;
 };

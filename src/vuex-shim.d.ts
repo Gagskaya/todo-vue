@@ -1,4 +1,5 @@
 import { Store } from 'vuex';
+
 import { List } from './store/modules/lists/types/list';
 
 declare module '@vue/runtime-core' {
@@ -8,13 +9,20 @@ declare module '@vue/runtime-core' {
       items: List[];
       item: List;
       loadingStatus: string;
+      taskLoadingStatus: string;
       activeList: number;
+      editedListName: string;
     };
     colors: {
       items: Color[];
     };
     modal: {
-      modal: boolean;
+      isVisibleAddList: boolean;
+      isVisibleAddTask: boolean;
+      isVisibleDeleteList: false;
+      isVisibleDeleteTask: false;
+      isVisibleEditListName: false;
+      isVisibleEditTaskText: false;
     };
   }
 

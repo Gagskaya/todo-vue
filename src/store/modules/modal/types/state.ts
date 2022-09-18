@@ -1,3 +1,8 @@
 export type State = {
-  modal: boolean;
+  isVisibleAddList: boolean;
+  isVisibleAddTask: boolean;
+  isVisibleEditListName: boolean;
+  isVisibleEditTaskText: boolean;
+  isVisibleDeleteList: boolean;
+  isVisibleDeleteTask: boolean;
 };

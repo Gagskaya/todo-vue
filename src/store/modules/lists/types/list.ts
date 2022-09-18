@@ -1,10 +1,10 @@
-import { Color } from '../../colors/types/colors';
-import { ListTask } from './listTask';
+import { Color } from '../../colors/types/color';
+import { Task } from './task';
 
 export interface List {
-  id: number;
+  id: string;
   name: string;
   colorId: number;
   color: Color;
-  tasks: ListTask[];
+  tasks: Task[];
 }

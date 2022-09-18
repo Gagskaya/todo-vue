@@ -1,0 +1,99 @@
+{
+  "lists": [
+    {
+      "id": "3670d2fe-c4bf-4b1f-a10a-7a22dc25a9da",
+      "name": "Покупки",
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319f",
+      "color": {
+        "id": "00973046-b504-4c74-92f0-eb6ebfd1319f",
+        "hex": "#C355F5",
+        "name": "purple"
+      },
+      "tasks": []
+    },
+    {
+      "id": "5a51f09b-72a1-4929-920e-318290baf99b",
+      "name": "Фильмы",
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319b",
+      "color": {
+        "id": "00973046-b504-4c74-92f0-eb6ebfd1319b",
+        "hex": "#42B883",
+        "name": "green"
+      },
+      "tasks": []
+    },
+    {
+      "id": "99c916c4-68a7-4908-ba5e-9c86df79c693",
+      "name": "Сериалы",
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319h",
+      "color": {
+        "id": "00973046-b504-4c74-92f0-eb6ebfd1319h",
+        "hex": "#FF6464",
+        "name": "red"
+      },
+      "tasks": []
+    }
+  ],
+  "tasks": [
+    {
+      "id": "91990f97-8618-4508-be31-3e63fb0ad435",
+      "text": "Макароны",
+      "listId": "3670d2fe-c4bf-4b1f-a10a-7a22dc25a9da",
+      "isCompleted": false
+    },
+    {
+      "id": "7c890739-8552-4a60-87dc-d1ba67cd24e9",
+      "text": "Хлеб",
+      "listId": "3670d2fe-c4bf-4b1f-a10a-7a22dc25a9da",
+      "isCompleted": false
+    },
+    {
+      "id": "1d37e81f-ec95-46ef-ac6f-9596450b9f67",
+      "text": "Бэтмен",
+      "listId": "5a51f09b-72a1-4929-920e-318290baf99b",
+      "isCompleted": false
+    }
+  ],
+  "colors": [
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319a",
+      "hex": "#C9D1D3",
+      "name": "grey"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319b",
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319c",
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319ed",
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319e",
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319f",
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319g",
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": "00973046-b504-4c74-92f0-eb6ebfd1319h",
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
+}
