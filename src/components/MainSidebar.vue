@@ -167,13 +167,12 @@ export default defineComponent({
         this.listNameError = true;
         return;
       }
-      const color = this.colors.find((color) => color.id === this.activeColor);
+      // const color = this.colors.find((color) => color.id === this.activeColor);
       const newList = {
         id: uuidv4(),
         name: this.listName,
         colorId: this.activeColor,
-        color,
-        tasks: [],
+        // color,
       };
 
       this.$store.dispatch(ListsActionsTypes.FETCH_ADD_LIST, newList);
@@ -220,7 +219,7 @@ export default defineComponent({
       this.$router.push(`/lists/${listId}`);
 
       this.$store.commit(ListsMutationsTypes.SET_ACTIVE_LIST, listId);
-      this.$store.dispatch(ListsActionsTypes.FETCH_LIST_TASKS_BY_ID, listId);
+      this.$store.dispatch(ListsActionsTypes.FETCH_TASKS_BY_ID, listId);
     },
   },
 });

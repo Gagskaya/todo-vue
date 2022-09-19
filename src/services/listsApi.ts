@@ -17,7 +17,7 @@ export const listsApi = {
     }
   },
 
-  async fetchListTasksById(listId: string) {
+  async fetchTasksById(listId: string) {
     try {
       const { data } = await axios.get<List>(
         `${apiUrl}/lists/${listId}?_expand=color&_embed=tasks`

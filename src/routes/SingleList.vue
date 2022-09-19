@@ -21,7 +21,7 @@ export default defineComponent({
     };
   },
   mounted() {
-    this.$store.dispatch(ListsActionsTypes.FETCH_LIST_TASKS_BY_ID, this.id);
+    this.$store.dispatch(ListsActionsTypes.FETCH_TASKS_BY_ID, this.id);
     this.$store.commit(ListsMutationsTypes.SET_ACTIVE_LIST, this.id);
   },
   computed: {

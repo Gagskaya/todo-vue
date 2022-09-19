@@ -3,35 +3,17 @@
     {
       "id": "3670d2fe-c4bf-4b1f-a10a-7a22dc25a9da",
       "name": "Покупки",
-      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319f",
-      "color": {
-        "id": "00973046-b504-4c74-92f0-eb6ebfd1319f",
-        "hex": "#C355F5",
-        "name": "purple"
-      },
-      "tasks": []
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319f"
     },
     {
       "id": "5a51f09b-72a1-4929-920e-318290baf99b",
       "name": "Фильмы",
-      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319b",
-      "color": {
-        "id": "00973046-b504-4c74-92f0-eb6ebfd1319b",
-        "hex": "#42B883",
-        "name": "green"
-      },
-      "tasks": []
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319b"
     },
     {
       "id": "99c916c4-68a7-4908-ba5e-9c86df79c693",
       "name": "Сериалы",
-      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319h",
-      "color": {
-        "id": "00973046-b504-4c74-92f0-eb6ebfd1319h",
-        "hex": "#FF6464",
-        "name": "red"
-      },
-      "tasks": []
+      "colorId": "00973046-b504-4c74-92f0-eb6ebfd1319h"
     }
   ],
   "tasks": [
