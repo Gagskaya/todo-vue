@@ -15,7 +15,6 @@ export const mutations: MutationTree<State> & Mutations = {
     state.items = [...state.items, list];
   },
   [ListsMutationsTypes.EDIT_LIST_NAME](state, payload) {
-    console.log(payload.listId, payload.newName);
     state.items = state.items.map((item) => {
       if (item.id === payload.listId) {
         item.name = payload.newName;

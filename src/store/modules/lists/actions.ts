@@ -9,6 +9,7 @@ export const actions = {
   async [ListsActionsTypes.FETCH_LISTS]({ commit }: AugmentedActionContext) {
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.LOADING);
     const lists = await listsApi.fetchLists();
+
     if (lists) {
       commit(ListsMutationsTypes.SET_LISTS, lists);
     }
@@ -19,6 +20,7 @@ export const actions = {
     listId: string
   ) {
     const list = await listsApi.fetchListTasksById(listId);
+
     if (list) {
       commit(ListsMutationsTypes.SET_LIST, list);
     }
@@ -28,7 +30,9 @@ export const actions = {
     list: List
   ) {
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.LOADING);
+
     await listsApi.fetchAddList(list);
+
     commit(ListsMutationsTypes.ADD_LIST, list);
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.SUCCESS);
   },
@@ -52,7 +56,9 @@ export const actions = {
     listId: string
   ) {
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.LOADING);
+
     await listsApi.fetchDeleteList(listId);
+
     commit(ListsMutationsTypes.DELETE_LIST, listId);
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.SUCCESS);
   },
@@ -63,6 +69,7 @@ export const actions = {
     commit(ListsMutationsTypes.SET_TASK_LOADING_STATUS, LoadingStatus.LOADING);
 
     await listsApi.fetchAddTaskToList(task);
+
     commit(ListsMutationsTypes.ADD_TASK_TO_LIST, task);
     commit(ListsMutationsTypes.SET_TASK_LOADING_STATUS, LoadingStatus.SUCCESS);
   },
@@ -87,6 +94,7 @@ export const actions = {
     commit(ListsMutationsTypes.SET_TASK_LOADING_STATUS, LoadingStatus.LOADING);
 
     await listsApi.fetchDeleteTaskFromList(taskId);
+
     commit(ListsMutationsTypes.DELETE_TASK_FROM_LIST, taskId);
     commit(ListsMutationsTypes.SET_TASK_LOADING_STATUS, LoadingStatus.SUCCESS);
   },
@@ -98,11 +106,11 @@ export const actions = {
       payload.isCompleted,
       payload.taskId
     );
+
     commit(ListsMutationsTypes.TOGGLE_TASK_IS_COMPLETED, {
       isCompleted: payload.isCompleted,
       taskId: payload.taskId,
     });
-
     commit(ListsMutationsTypes.SET_LOADING_STATUS, LoadingStatus.SUCCESS);
   },
 };

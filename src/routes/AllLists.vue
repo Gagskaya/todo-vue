@@ -3,7 +3,7 @@
     <template v-for="list in lists" :key="list.id">
       <MainList :list="list" />
       <div v-if="!list.tasks.length" style="margin-bottom: 15px">
-        В этом списке задач нет
+        <p>В этом списке задач нет</p>
       </div>
     </template>
   </div>

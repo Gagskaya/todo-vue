@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { List } from '@/store/modules/lists/types/list';
 
-import { apiUrl } from './apiUrl';
+import { apiUrl } from '../constants/apiUrl';
 import { Task } from '@/store/modules/lists/types/task';
 
 export const listsApi = {

@@ -12,7 +12,7 @@
         v-if="isVisibleEditListName"
         @handleSubmit="() => handleEditListName(list.id)"
         @handleDecline="handleDeclineEditListName"
-        text="Изменить значение"
+        text="Изменить название"
         type="edit"
         v-model="editedListName"
         :error="editedListNameError"
@@ -64,7 +64,7 @@
           v-if="isVisibleEditTaskText"
           @handleSubmit="() => handleEditTaskText(task.id)"
           @handleDecline="handleDeclineEditTaskText"
-          text="Изменить значение"
+          text="Изменить название"
           type="edit"
           v-model="editedTaskText"
           :error="editedTaskTextError"
@@ -84,6 +84,12 @@
         @handleDecline="toggleIsVisibleDeleteTask"
         text="Вы действитель хотите удалить задачу?"
       />
+    </div>
+    <div
+      v-if="$route.name === 'SingleList' && !list?.tasks?.length"
+      style="margin: 0px 0px 20px 10px"
+    >
+      <p>Пока задач нет</p>
     </div>
     <div
       v-if="$route.name === 'SingleList'"

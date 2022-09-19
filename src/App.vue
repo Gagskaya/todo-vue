@@ -8,13 +8,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-
 import Sidebar from './components/MainSidebar.vue';
 
-export default defineComponent({
+export default {
   components: { Sidebar },
-});
+};
 </script>
 
 <style lang="scss" module>
